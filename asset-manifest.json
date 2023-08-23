@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/medals-more-react-basic-concepts/static/css/main.65363fb6.css",
-    "main.js": "/medals-more-react-basic-concepts/static/js/main.57c0673c.js",
+    "main.css": "/medals-more-react-basic-concepts/static/css/main.c7c6dcec.css",
+    "main.js": "/medals-more-react-basic-concepts/static/js/main.f665cbf2.js",
     "static/js/787.4d6ab9fd.chunk.js": "/medals-more-react-basic-concepts/static/js/787.4d6ab9fd.chunk.js",
     "index.html": "/medals-more-react-basic-concepts/index.html",
-    "main.65363fb6.css.map": "/medals-more-react-basic-concepts/static/css/main.65363fb6.css.map",
-    "main.57c0673c.js.map": "/medals-more-react-basic-concepts/static/js/main.57c0673c.js.map",
+    "main.c7c6dcec.css.map": "/medals-more-react-basic-concepts/static/css/main.c7c6dcec.css.map",
+    "main.f665cbf2.js.map": "/medals-more-react-basic-concepts/static/js/main.f665cbf2.js.map",
     "787.4d6ab9fd.chunk.js.map": "/medals-more-react-basic-concepts/static/js/787.4d6ab9fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.65363fb6.css",
-    "static/js/main.57c0673c.js"
+    "static/css/main.c7c6dcec.css",
+    "static/js/main.f665cbf2.js"
   ]
 }
