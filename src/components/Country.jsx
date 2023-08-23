@@ -1,43 +1,47 @@
-import { Avatar, Button, Container, Divider, Paper } from '@mui/material';
+import { Avatar, Button, Divider, Paper } from '@mui/material';
 import React, { Component } from 'react';
-import PlusOneRoundedIcon from '@mui/icons-material/PlusOneRounded';
+import AddRoundedIcon from '@mui/icons-material/AddRounded';
+import RemoveRoundedIcon from '@mui/icons-material/RemoveRounded';
 
 class Country extends Component {
-    state = {
-        name: 'United States',
-        gold: 0,
-    }
-
-    handleIncrement = () => {
-        this.setState({ gold: this.state.gold + 1 })
+    renderDisabled(gold){
+        return (gold <= 0 ? true : false);
     }
 
     render() {
+        const { onIncrement, onDecrement, country } = this.props;
         return (
-            // contains the other div elements
-            <Container maxWidth="lg">
-                <Paper elevation={3} className='paperBounds'>
-                    {/* div element used to display the country's name */}
-                    <div className='countryName'>
-                        { this.state.name }
-                    </div>
+            // contains each div elements
+            <Paper elevation={3} className='paperBounds'>
+                {/* div element used to display the country's name */}
+                <div className='countryName'>
+                    { country.name }
+                </div>
 
-                    <Divider className='dividerScale'/>
+                <Divider className='dividerScale'/>
 
-                    {/* div element used to display the gold medal count */}
-                    <div className='medalCountDiv'>
-                        <Avatar className='countDiv'>{ this.state.gold }</Avatar>
-                        <span className='goldMedalText'>Gold Medals</span>
+                {/* div element used to display the gold medal count */}
+                <div className='medalCountDiv'>
+                    <Avatar className='countDiv'>{ country.gold }</Avatar>
+                    <span className='goldMedalText'>Gold Medals</span>
 
-                        {/* button element used to increment the gold medal count */}
-                        <Button onClick={ this.handleIncrement }
-                                className='incrementButtonClass' 
-                                variant='outlined'>
-                            <PlusOneRoundedIcon/>
-                        </Button>
-                    </div>
-                </Paper>
-            </Container>
+                    {/* button element used to increment the gold medal count */}
+                    <Button onClick={ () => onIncrement(country.id) }
+                            className='incdecButtonClass' 
+                            variant='outlined'>
+                        <AddRoundedIcon/>
+                    </Button>
+
+                    {/* button element used to decrement the gold medal count */}
+                    <Button onClick={ () => onDecrement(country.id) }
+                            className='incdecButtonClass' 
+                            variant='outlined'
+                            color='error'
+                            disabled={this.renderDisabled(country.gold)}>
+                        <RemoveRoundedIcon/>
+                    </Button>
+                </div>
+            </Paper>
         );
     }
     

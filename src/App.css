@@ -41,27 +41,17 @@ div .countDiv {
   padding-left: 5px;
 } 
 
-div .incrementButtonClass {
+div .incdecButtonClass {
   min-width: 0;
-  padding: 4px;
+  padding: 0px;
+  border-width: 3px;
+  margin-left: 5px;
 }
 
-
-/* 
-
-.App {
-  text-align: center;
+div .incdecButtonClass:hover {
+  border-width: 3px;
 }
 
-.CountryName {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin-bottom: 10px;
+div .incdecButtonClass:disabled {
+  border-width: 3px;
 }
-
-.Medals button {
-  margin-left: 10px;
-  width: 25px;
-} 
-
-*/
