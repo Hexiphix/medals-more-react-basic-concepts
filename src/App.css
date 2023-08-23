@@ -1,38 +1,67 @@
+body {
+  background-color: thistle;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.paperBounds {
+  width: 260px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.countryName {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+div .dividerScale {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-width: 1px;
+}
+
+.medalCountDiv {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+div .countDiv {
+  color: black;
+  background-color: #ffc107;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.goldMedalText {
+  width: 145px;
+  font-size: 1.4em;
+  padding-left: 5px;
+} 
+
+div .incrementButtonClass {
+  min-width: 0;
+  padding: 4px;
+}
+
+
+/* 
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CountryName {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.Medals button {
+  margin-left: 10px;
+  width: 25px;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+*/
