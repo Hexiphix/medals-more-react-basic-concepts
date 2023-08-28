@@ -29,7 +29,7 @@ class Country extends Component {
                     <Button onClick={ () => onIncrement(country.id) }
                             className='incdecButtonClass' 
                             variant='outlined'>
-                        <AddRoundedIcon/>
+                        <AddRoundedIcon fontSize='large'/>
                     </Button>
 
                     {/* button element used to decrement the gold medal count */}
@@ -38,7 +38,7 @@ class Country extends Component {
                             variant='outlined'
                             color='error'
                             disabled={this.renderDisabled(country.gold)}>
-                        <RemoveRoundedIcon/>
+                        <RemoveRoundedIcon fontSize='large'/>
                     </Button>
                 </div>
             </Paper>
